@@ -2,7 +2,10 @@
 /* https://edwardtufte.github.io/tufte-css/ */
 /* https://www.polygon.com/23612194/kerbal-space-program-2-early-access-release-date-impressions */
 
-/* font https://edwardtufte.github.io/et-book/ */
+@font-face {
+  font-family: "et-book";
+  src: url("et-book-semi-bold-old-style-figures.woff") format("woff");
+}
 
 * {
   box-sizing: border-box;
@@ -10,20 +13,141 @@
   margin: 0;
 }
 
+html {
+  --primary-color: #F1DBBF;
+  --secondary-color: #698269;
+  --tertiary-color: #AA5656;
+
+  /* --primary-color: #40513B;
+  --secondary-color: #EDF1D6;
+  --tertiary-color: #609966; */
+
+}
+
+p, 
+button {
+  font-family: 'et-book', Georgia, Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+input {
+  font-family: 'Baskervville', Georgia, Times, serif;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  padding: 1rem;
+  margin: 5rem;
+}
+
+h3 {
+  font-weight: bold;
+  margin: 0.2rem 0;
+}
+
+body > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+body header nav ul li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+nav ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+main header {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.main-text {
+  margin: auto;
+  max-width: 59ch;
+  text-indent: 0.5in;
+  line-height: 1.4;
+  padding: 2rem;
+}
+
 img {
   max-width: 100%;
 }
 
-html {
-  color-scheme: light dark;
-  /* has issues https://www.robinrendle.com/notes/the-smallest-css/ */
-}
-body {
-  font-family: 
-  padding: 0 15px;
-  max-width: 650px;
-  font-size: 115%;
-  line-height: 1.4;
+.separator {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 75px;
 }
 
-/* bold change color */
+.newsletter-cta {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  font-size: 140%;
+  padding: 2rem;
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+input {
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+
+input:focus {
+  outline: 2px var(--primary-color);
+  outline-style: solid;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  padding: 0.5em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+footer p {
+  text-align: right;
+  font-size: 1rem;
+  margin-right: 1ch;
+}
