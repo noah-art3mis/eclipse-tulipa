@@ -13,6 +13,10 @@
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 html {
   --primary-color: #F1DBBF;
   --secondary-color: #698269;
@@ -25,7 +29,8 @@ html {
 }
 
 p, 
-button {
+button,
+header nav ul li {
   font-family: 'et-book', Georgia, Times, serif;
 }
 
@@ -91,8 +96,10 @@ body {
   padding: 2rem;
 }
 
-img {
-  max-width: 100%;
+blockquote {
+  text-indent: 0;
+  text-align: justify;
+  margin: 0.2in 0.25in 0.2in 1in;
 }
 
 .separator {
