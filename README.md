@@ -1,1 +1,4 @@
-#site do eclipse da tulipa 2
+# curso_ebac_frontend
+protótipo de site estático para publicação de artigos  
+ver em https://eclipse-tulipa.vercel.app/  
+inspirado em https://edwardtufte.github.io/tufte-css/  
